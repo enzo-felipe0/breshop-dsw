@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - BreShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><a href="index.html">BreShop</a></h1>
+                    <span class="tagline">Moda </span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html" class="active">Produtos</a></li>
+                    <li><a href="dashboard.html">Meu Painel</a></li>
+                    <li><a href="login.html" class="btn-login">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Catálogo de Produtos</h1>
+                <p>Descubra peças únicas!</p>
+            </div>
+
+            <div class="products-layout">
+                <aside class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Filtros</h3>
+                        <button class="btn-clear">Limpar</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Buscar</h4>
+                        <input type="search" placeholder="Digite o nome do produto..." class="search-input">
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Categoria</h4>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category">
+                            <span>Roupas Femininas</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category">
+                            <span>Roupas Masculinas</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category">
+                            <span>Calçados</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category">
+                            <span>Acessórios</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="category">
+                            <span>Bolsas</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Preço</h4>
+                        <div class="price-inputs">
+                            <input type="number" placeholder="Min" min="0">
+                            <span>-</span>
+                            <input type="number" placeholder="Max" min="0">
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Estado de Conservação</h4>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="condition">
+                            <span>Novo</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="condition">
+                            <span>Seminovo</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="condition">
+                            <span>Usado - Bom Estado</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Tamanho</h4>
+                        <div class="size-grid">
+                            <button class="size-btn">PP</button>
+                            <button class="size-btn">P</button>
+                            <button class="size-btn">M</button>
+                            <button class="size-btn">G</button>
+                            <button class="size-btn">GG</button>
+                            <button class="size-btn">XG</button>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-full">Aplicar Filtros</button>
+                </aside>
+
+                <div class="products-main">
+                    <div class="products-toolbar">
+                        <p class="results-count">Mostrando <strong>48</strong> produtos</p>
+                        <select class="sort-select">
+                            <option>Mais Relevantes</option>
+                            <option>Menor Preço</option>
+                            <option>Maior Preço</option>
+                            <option>Mais Recentes</option>
+                        </select>
+                    </div>
+
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/jeans-jaqueta-vintage.jpeg" alt="Produto">
+                                <span class="badge">Novo</span>
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Jaqueta Jeans Vintage</h3>
+                                <p class="product-price">R$ 89,90</p>
+                                <p class="product-condition">Ótimo estado</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/vestido-floral-primavera.jpg" alt="Produto">
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Vestido Floral Primavera</h3>
+                                <p class="product-price">R$ 65,00</p>
+                                <p class="product-condition">Seminovo</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/bolsa-couro-legitimo.jpeg" alt="Produto">
+                                <span class="badge badge-sale">Oferta</span>
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Bolsa de Couro Legítimo</h3>
+                                <p class="product-price">R$ 120,00</p>
+                                <p class="product-condition">Impecável</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/tenis-esportivo.JPG" alt="Produto">
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Tênis Esportivo Classic</h3>
+                                <p class="product-price">R$ 95,00</p>
+                                <p class="product-condition">Pouco usado</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/camisa-social.webp" alt="Produto">
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Camisa Social Listrada</h3>
+                                <p class="product-price">R$ 55,00</p>
+                                <p class="product-condition">Ótimo estado</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/saia-midi.jpeg" alt="Produto">
+                                <span class="badge">Novo</span>
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Saia Midi Elegante</h3>
+                                <p class="product-price">R$ 72,00</p>
+                                <p class="product-condition">Seminovo</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/blazer-classico.jpeg" alt="Produto">
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Blazer Preto Clássico</h3>
+                                <p class="product-price">R$ 110,00</p>
+                                <p class="product-condition">Impecável</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="images/calca-cargo.webp" alt="Produto">
+                                <button class="btn-favorite">♡</button>
+                            </div>
+                            <div class="product-info">
+                                <h3>Calça Jeans Cargo</h3>
+                                <p class="product-price">R$ 68,00</p>
+                                <p class="product-condition">Bom estado</p>
+                                <a href="produto-detalhe.html" class="btn btn-small">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <button class="btn-page" disabled>« Anterior</button>
+                        <button class="btn-page active">1</button>
+                        <button class="btn-page">2</button>
+                        <button class="btn-page">3</button>
+                        <button class="btn-page">4</button>
+                        <button class="btn-page">Próximo »</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 BreShop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

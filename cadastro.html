@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - BreShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><a href="index.html">BreShop</a></h1>
+                    <span class="tagline">Moda </span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="dashboard.html">Meu Painel</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <div class="container-small">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h2>Crie Sua Conta</h2>
+                    <p>Comece a comprar ou vender agora mesmo</p>
+                </div>
+
+                <form class="auth-form" id="registerForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="João Silva" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="seu@email.com" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Senha</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Mínimo 8 caracteres" 
+                            required
+                            minlength="8"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar Senha</label>
+                        <input 
+                            type="password" 
+                            id="confirm-password" 
+                            name="confirm-password" 
+                            placeholder="Digite a senha novamente" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-type">Tipo de Conta</label>
+                        <select id="user-type" name="user-type" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="buyer">Comprador - Quero comprar produtos</option>
+                            <option value="seller">Vendedor - Quero vender produtos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-footer">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span>Aceito os <a href="#" class="link-primary">termos de uso</a> e <a href="#" class="link-primary">política de privacidade</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Criar Conta</button>
+
+                    <div class="form-divider">
+                        <span>ou</span>
+                    </div>
+
+                    <p class="form-redirect">
+                        Já tem uma conta? 
+                        <a href="login.html" class="link-primary">Faça login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 BreShop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

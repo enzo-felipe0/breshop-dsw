@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - BreShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1><a href="index.html">BreShop</a></h1>
+                    <span class="tagline">Moda </span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="dashboard.html" class="active">Meu Painel</a></li>
+                    <li><a href="#" class="btn-logout">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="container">
+            <div class="dashboard-layout">
+                <aside class="sidebar">
+                    <div class="user-profile">
+                        <div class="user-avatar">JS</div>
+                        <div class="user-info">
+                            <h3>João Silva</h3>
+                            <p>Vendedor</p>
+                        </div>
+                    </div>
+                    <nav class="sidebar-menu">
+                        <a href="#overview" class="sidebar-link active">
+                            <span class="icon">📊</span>
+                            Visão Geral
+                        </a>
+                        <a href="#products" class="sidebar-link">
+                            <span class="icon">📦</span>
+                            Meus Produtos
+                        </a>
+                        <a href="#orders" class="sidebar-link">
+                            <span class="icon">🛍️</span>
+                            Pedidos
+                        </a>
+                        <a href="#sales" class="sidebar-link">
+                            <span class="icon">💰</span>
+                            Minhas Vendas
+                        </a>
+                        <a href="#profile" class="sidebar-link">
+                            <span class="icon">⚙️</span>
+                            Configurações
+                        </a>
+                    </nav>
+                </aside>
+
+                <div class="dashboard-content">
+                    <div class="page-header">
+                        <h1>Visão Geral</h1>
+                        <a href="#" class="btn btn-primary">+ Adicionar Produto</a>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon yellow">📦</div>
+                            <div class="stat-info">
+                                <p class="stat-label">Produtos Ativos</p>
+                                <h3 class="stat-value">24</h3>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon green">💰</div>
+                            <div class="stat-info">
+                                <p class="stat-label">Vendas Este Mês</p>
+                                <h3 class="stat-value">R$ 1.850,00</h3>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon blue">🛍️</div>
+                            <div class="stat-info">
+                                <p class="stat-label">Pedidos Pendentes</p>
+                                <h3 class="stat-value">5</h3>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon orange">⭐</div>
+                            <div class="stat-info">
+                                <p class="stat-label">Avaliação Média</p>
+                                <h3 class="stat-value">4.8</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <h2>Produtos com Baixo Estoque</h2>
+                            <a href="#products" class="link-primary">Ver todos</a>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Produto</th>
+                                        <th>Preço</th>
+                                        <th>Estoque</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product-cell">
+                                                <img src="images/placeholder.jpg" alt="Produto">
+                                                <span>Jaqueta Jeans Vintage</span>
+                                            </div>
+                                        </td>
+                                        <td>R$ 89,90</td>
+                                        <td><span class="badge badge-warning">2 unidades</span></td>
+                                        <td><span class="badge badge-success">Ativo</span></td>
+                                        <td>
+                                            <button class="btn-icon" title="Editar">✏️</button>
+                                            <button class="btn-icon" title="Visualizar">👁️</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-cell">
+                                                <img src="images/placeholder.jpg" alt="Produto">
+                                                <span>Vestido Floral Primavera</span>
+                                            </div>
+                                        </td>
+                                        <td>R$ 65,00</td>
+                                        <td><span class="badge badge-warning">1 unidade</span></td>
+                                        <td><span class="badge badge-success">Ativo</span></td>
+                                        <td>
+                                            <button class="btn-icon" title="Editar">✏️</button>
+                                            <button class="btn-icon" title="Visualizar">👁️</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="product-cell">
+                                                <img src="images/placeholder.jpg" alt="Produto">
+                                                <span>Tênis Esportivo Classic</span>
+                                            </div>
+                                        </td>
+                                        <td>R$ 95,00</td>
+                                        <td><span class="badge badge-danger">Esgotado</span></td>
+                                        <td><span class="badge badge-inactive">Inativo</span></td>
+                                        <td>
+                                            <button class="btn-icon" title="Editar">✏️</button>
+                                            <button class="btn-icon" title="Visualizar">👁️</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <h2>Vendas Recentes</h2>
+                            <a href="#sales" class="link-primary">Ver todas</a>
+                        </div>
+                        <div class="table-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Pedido</th>
+                                        <th>Cliente</th>
+                                        <th>Produto</th>
+                                        <th>Valor</th>
+                                        <th>Status</th>
+                                        <th>Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#1234</td>
+                                        <td>Maria Santos</td>
+                                        <td>Bolsa de Couro Legítimo</td>
+                                        <td>R$ 120,00</td>
+                                        <td><span class="badge badge-info">Enviado</span></td>
+                                        <td>15/10/2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1233</td>
+                                        <td>Carlos Oliveira</td>
+                                        <td>Jaqueta Jeans Vintage</td>
+                                        <td>R$ 89,90</td>
+                                        <td><span class="badge badge-warning">Processando</span></td>
+                                        <td>14/10/2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#1232</td>
+                                        <td>Ana Costa</td>
+                                        <td>Vestido Floral Primavera</td>
+                                        <td>R$ 65,00</td>
+                                        <td><span class="badge badge-success">Entregue</span></td>
+                                        <td>12/10/2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 BreShop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
