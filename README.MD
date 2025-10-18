@@ -1,11 +1,11 @@
 # BRESHOP - BRECHÓ ONLINE  
-**Plataforma de E-commerce para Moda Sustentável**
+**Plataforma de E-commerce para Moda Sustentável** \
 Projeto para a disciplina de Desenvolvimento Web
 
----
+
 
 ## ESTRUTURA DO PROJETO
-
+```
 projeto/
 ├── index.html # Página inicial com hero, features e produtos em destaque
 ├── login.html # Página de autenticação de usuários
@@ -18,8 +18,7 @@ projeto/
 ├── images/
 │ └── exemplo.jpg # Imagem de exemplo de produtos
 └── README.md # Este arquivo
-
----
+```
 
 ## DESCRIÇÃO DAS PÁGINAS
 
