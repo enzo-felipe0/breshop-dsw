@@ -1,8 +1,14 @@
 # BRESHOP - BRECHÓ ONLINE  
 **Plataforma de E-commerce para Moda Sustentável** \
 Projeto para a disciplina de Desenvolvimento Web
+## AUTOR
 
+**Desenvolvido para:** Enzo Felipe Prudencio Avelino Lima  
+**Matrícula:** 20240065606  
+**Projeto:** Trabalho acadêmico **Universidade Federal do Maranhão** - Sistema BreShop
 
+## Como iniciar o projeto
+O projeto deve ser iniciado a partir do arquivo `index.html`.  A partir dele é possível navegar para as outras páginas através de links HTML.  
 
 ## ESTRUTURA DO PROJETO
 ```
@@ -141,8 +147,3 @@ projeto/
 
 ---
 
-## AUTOR
-
-**Desenvolvido para:** Enzo Felipe Prudencio Avelino Lima  
-**Matrícula:** 20240065606  
-**Projeto:** Trabalho acadêmico **Universidade Federal do Maranhão** - Sistema BreShop
